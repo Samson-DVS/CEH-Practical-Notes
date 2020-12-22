@@ -1,4 +1,5 @@
 nmap -sV -sC -oA nmap.txt 10.10.10.x
 nmap -sC -sV -v -oN nmap.txt 10.10.10.x
+nmap -sS -P0 -A -v 10.10.10.x
 masscan -e tun0 -pi-65535 --rate=1000
 nmap -sU -sV -A -T4 -v -oN udp.txt 10.10.10.x
