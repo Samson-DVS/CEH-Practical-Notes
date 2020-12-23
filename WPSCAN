@@ -1,0 +1,5 @@
+WPSCAN
+
+User Enumeration : wpscan --url https://example/ --enumerate u
+Bruteforce: wpscan --url https://example/ --passwords wordlist.txt --usernames samson
+
