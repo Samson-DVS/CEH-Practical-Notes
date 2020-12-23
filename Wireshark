@@ -1,0 +1,3 @@
+To find DOS (SYN and ACK) : tcp.flags.syn == 1  , tcp.flags.syn == 1 and tcp.flags.ack == 0
+To find passwords : http.request.method == POST
+More reference: https://www.comparitech.com/net-admin/wireshark-cheat-sheet/
