@@ -1,3 +1,5 @@
 To find DOS (SYN and ACK) : tcp.flags.syn == 1  , tcp.flags.syn == 1 and tcp.flags.ack == 0
 To find passwords : http.request.method == POST
 More reference: https://www.comparitech.com/net-admin/wireshark-cheat-sheet/
+
+To find DOS: Look for Red and Black packets with around 1-2 simple packets in between and then pick any packet and check the Source and Destination IP with port(As per question)
